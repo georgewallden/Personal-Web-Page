@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>George Wallden - Application Developer</title>
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            min-height: 100vh;
+        }
+        
+        /* Main layout */
+        .container {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            max-width: 1100px;
+            margin: 20px auto;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Left sidebar */
+        .sidebar {
+            background-color: #e6e6e6;
+            width: 30%;
+            padding: 40px 30px;
+        }
+        
+        /* Main content area */
+        .main-content {
+            background-color: white;
+            width: 70%;
+            padding: 40px 30px;
+        }
+        
+        /* Sidebar styles */
+        .name {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #222;
+        }
+        
+        .title {
+            font-size: 18px;
+            text-transform: uppercase;
+            margin-bottom: 40px;
+            color: #333;
+        }
+        
+        .section-title {
+            text-transform: uppercase;
+            font-size: 16px;
+            color: #333;
+            margin: 30px 0 15px 0;
+            font-weight: bold;
+        }
+        
+        .contact-info {
+            margin-bottom: 40px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .contact-item span:first-child {
+            margin-right: 10px;
+            width: 20px;
+            display: inline-block;
+        }
+        
+        .skills-list {
+            list-style-type: none;
+        }
+        
+        .skills-list li {
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 20px;
+        }
+        
+        .skills-list li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #333;
+        }
+        
+        /* Main content styles */
+        .content-section {
+            margin-bottom: 30px;
+        }
+        
+        .content-title {
+            font-size: 20px;
+            text-transform: uppercase;
+            color: #333;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        .summary {
+            line-height: 1.6;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        
+        .experience-item {
+            margin-bottom: 20px;
+        }
+        
+        .date {
+            color: #555;
+            margin-bottom: 5px;
+        }
+        
+        .job-title {
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+        
+        .company {
+            margin-bottom: 15px;
+        }
+        
+        .job-duties {
+            list-style-type: none;
+        }
+        
+        .job-duties li {
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 20px;
+            line-height: 1.5;
+        }
+        
+        .job-duties li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #333;
+        }
+        
+        .education-item, .certification-item, .project-item {
+            margin-bottom: 20px;
+        }
+        
+        .degree {
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+        
+        .school {
+            margin-bottom: 5px;
+        }
+        
+        .project-title {
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        
+        .project-description {
+            line-height: 1.5;
+        }
+
+        /* Mobile responsive styles - improved for better stacking */
+        @media screen and (max-width: 768px) {
+            body {
+                padding: 0;
+            }
+            
+            .container {
+                flex-direction: column;
+                margin: 0;
+                box-shadow: none;
+            }
+            
+            .sidebar, .main-content {
+                width: 100%;
+                padding: 20px 15px;
+            }
+            
+            .name {
+                font-size: 28px;
+            }
+            
+            .title {
+                font-size: 16px;
+                margin-bottom: 20px;
+            }
+            
+            .content-title {
+                font-size: 18px;
+            }
+            
+            .job-title, .degree, .project-title {
+                font-size: 16px;
+            }
+            
+            .contact-item {
+                font-size: 14px;
+            }
+            
+            .job-duties li, .skills-list li {
+                font-size: 14px;
+            }
+        }
+        
+        /* Extra small screens */
+        @media screen and (max-width: 480px) {
+            .name {
+                font-size: 24px;
+            }
+            
+            .sidebar, .main-content {
+                padding: 15px 10px;
+            }
+            
+            .job-duties li, .skills-list li {
+                padding-left: 15px;
+            }
+            
+            .content-title {
+                font-size: 16px;
+            }
+            
+            .summary, .job-duties li, .project-description {
+                font-size: 14px;
+                line-height: 1.4;
+            }
+            
+            .contact-item span:first-child {
+                width: 15px;
+            }
+            
+            .section-title {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Left Sidebar -->
+        <div class="sidebar">
+            <h1 class="name">GEORGE WALLDEN</h1>
+            <p class="title">APPLICATION DEVELOPER</p>
+            
+            <div class="contact-info">
+                <h2 class="section-title">CONTACT INFO:</h2>
+                
+                <div class="contact-item">
+                    <span></span>
+                    <span>georgewallden@outlook.com</span>
+                </div>
+
+                <div class="contact-item">
+                    <span></span>
+                    <span>www.GeorgeWallden.com</span>
+                </div>
+                
+                <div class="contact-item">
+                    <span></span>
+                    <span>Tinton Falls, NJ 07753</span>
+                </div>
+
+                <div class="contact-item">
+                    <span></span>
+                    <span>973-856-4811</span>
+                </div>
+
+                <div class="contact-item">
+                    <span></span>
+                    <span><a href="https://www.linkedin.com/in/george-wallden-0b085815b/" style="color: #0077b5; text-decoration: none;" target="_blank">LinkedIn</a></span>
+                </div>
+                
+            </div>
+            
+            <div class="skills-section">
+                <h2 class="section-title">SKILLS:</h2>
+                
+                <ul class="skills-list">
+                    <li>Amazon Web Services</li>
+                    <li>SQL</li>
+                    <li>Python</li>
+                    <li>React</li>
+                    <li>Javascript</li>
+                    <li>CSS</li>
+                    <li>S3</li>
+                    <li>DynamoDB</li>
+                    <li>Cloudformation</li>
+                    <li>Version Control - Git</li>
+                    <li>Training and mentoring</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Main Content -->
+        <div class="main-content">
+            <section class="content-section">
+                <h2 class="content-title">PROFESSIONAL SUMMARY</h2>
+                <p class="summary">
+                    Application Developer at Mistras Group Inc. with a strong foundation in database design, development, and performance optimization. Currently expanding my skills in AWS and cloud-native architectures, with the goal of transitioning into a cloud-focused role.
+                </p>
+            </section>
+            
+            <section class="content-section">
+                <h2 class="content-title">EXPERIENCE</h2>
+                
+                <div class="experience-item">
+                    <p class="date">December 2019 - Present</p>
+                    <p class="job-title">Application Developer</p>
+                    <p class="company">Mistras Group Inc., Princeton Junction, NJ</p>
+                    
+                    <ul class="job-duties">
+                        <li><strong>Designed and implemented</strong> databases for various customer-facing and internal projects, ensuring compliance with company standards and exceeding client expectations.</li>
+                        <li><strong>Collaborated with business analysts</strong> to gather requirements and translate them into optimized database schemas, consistently meeting project deadlines.</li>
+                        <li><strong>Developed and maintained</strong> relational database components—including tables, views, stored procedures, and triggers—to enhance system performance and scalability.</li>
+                        <li><strong>Presented software solutions</strong> directly to clients, facilitating feedback sessions and providing on-site training to ensure seamless adoption.</li>
+                        <li><strong>Collaborated with a multinational development team</strong> using AGILE methodologies, enhancing software development efficiency and team synergy.</li>
+                        <li><strong>Utilized</strong> Novacura Flow Studio, Microsoft SQL Server, and SSRS to develop and enhance customer web portals and mobile applications, delivering robust and user-friendly solutions.</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section class="content-section">
+                <h2 class="content-title">EDUCATION</h2>
+                
+                <div class="education-item">
+                    <p class="date">August 2019</p>
+                    <p class="degree">Bachelor of Science (B.S.) in Computer Science</p>
+                    <p class="school">The College of New Jersey (TCNJ), NJ</p>
+                </div>
+            </section>
+            
+            <section class="content-section">
+                <h2 class="content-title">CERTIFICATIONS</h2>
+                
+                <ul class="job-duties">
+                    <li>Amazon Web Services - AWS Certified Cloud Practitioner</li>
+                    <li>Amazon Web Services - AWS Certified AI Practitioner</li>
+                </ul>
+            </section>
+            
+            <section class="content-section">
+                <h2 class="content-title">PROJECTS</h2>
+
+                <div class="project-item">
+                    <p class="project-title">Personal Resume Website</p>
+                    <p class="project-description">
+                        Deployed a static website on AWS S3 with secure public access and custom domain via Route 53 and Certificate Manager. Automated cloud infrastructure provisioning using Cloudformation. 
+                    </p>
+                </div>
+                
+                <div class="project-item">
+                    <p class="project-title">Personal Budget Web App</p>
+                    <p class="project-description">
+                        A modular web app for managing and tracking personal financial data. Front end using the React framework hosted on AWS. Technologies include: Javascript, CSS, HTML, AWS Amplify, AWS DynamoDB, AWS S3.
+                    </p>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
