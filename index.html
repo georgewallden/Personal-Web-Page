@@ -270,20 +270,20 @@
                     <span>georgewallden@outlook.com</span>
                 </div>
 
-                <div class="contact-item">
+                <!-- <div class="contact-item">
                     <span></span>
                     <span>linkedin.com/in/george-wallden</span>
                 </div>
 
-                <!-- <div class="contact-item">
+                 <div class="contact-item">
                     <span></span>
                     <span>github.com/georgewallden</span>
-                </div>
+                </div> -->
 
                 <div class="contact-item">
                     <span></span>
                     <span>www.GeorgeWallden.com</span>
-                </div> -->
+                </div> 
                 
                 <div class="contact-item">
                     <span></span>
@@ -304,11 +304,6 @@
                     <span></span>
                     <span><a href="https://www.github.com/georgewallden" style="color: #0077b5; text-decoration: none;" target="_blank">GitHub</a></span>
                 </div>
-
-                
-                
-               
-                
             </div>
             
             <div class="skills-section">
@@ -325,21 +320,21 @@
                     <li>Amazon Web Services (AWS)</li>
                     <li>API Gateway, Lambda, S3 </li> 
                     <li>RDS, DynamoDB</li>
-                    <li>CloudFront, Route 53, Certificate Manager</li>
-                    <li>CloudFormation (Infrastructure as Code)</li>
+                    <li>CloudFormation, Terraform (Infrastructure as Code)</li>
                     <li>Docker, ECR, ECS</li>
-                    <li>Polly, Rekognition, Comprehend</li>
+                    <li>Bedrock, Polly, Rekognition, Comprehend</li>
                     <li>CI/CD (GitHub Actions)</li>
+                    <li>CloudFront, Route 53, Certificate Manager</li>
+                    <li>IAM, Cloudwatch, SNS </li>
                 </ul>
             
                 <h3 class="section-title"> Programming & Frontend</h3>
                 <ul class="skills-list">
-                    <li>SQL</li>
+                    <li>SQL, Python</li>
                     <li>React</li>
                     <li>JavaScript</li>
                     <li>CSS</li>
                     <li>HTML</li>
-                    <li>Python</li>
                 </ul>
             
                 <h3 class="section-title"> Tools & Collaboration</h3>
@@ -375,33 +370,50 @@
             </section>
 
             <section class="content-section">
-                <h2 class="content-title">CLOUD PROJECTS</h2>
+                <h2 class="content-title">
+                    <a href="portfolio.html" style="text-decoration: none; color: inherit;">CLOUD PROJECTS</a>
+                </h2>
 
                 <div class="project-item">
-                    <p class="project-title">Serverless Text-to-Speech API</p>
-                    <p class="project-description">
-                        Developed and deployed a serverless Text-to-Speech API on AWS using API Gateway, Lambda, and Amazon Polly. Defined infrastructure with CloudFormation and implemented CI/CD using GitHub Actions for automated deployment, returning a public S3 URL for synthesized audio.
+                    <p class="project-title">
+                        <a href="https://github.com/georgewallden/Tech-to-Business-Translator" style="text-decoration:none; color: inherit;">Speak to Business Speak Translator</a>
+                    </p>
+                    <p class="project-description">   
+                        Developed a <b>Full-Stack</b> web application using <b>AWS Bedrock</b> (Claude) that provides business-oriented explanations for technical content. Architected with React/Flask, deployed on App Runner (<b>Docker</b> containers), and provisioned comprehensive cloud infrastructure using <b>Terraform</b>.
                     </p>
                 </div>
 
                 <div class="project-item">
-                    <p class="project-title">Is it a Dog? Serverless API App</p>
+                    <p class="project-title">
+                        <a href="https://github.com/georgewallden/Cloudformation-text-to-speech" style="text-decoration:none; color: inherit;">Serverless Text-to-Speech API</a>
+                    </p>
                     <p class="project-description">
-                        Implemented a serverless image recognition API using AWS Lambda, API Gateway, and S3, leveraging Amazon Rekognition to identify dogs within uploaded images.
+                        Developed and deployed a serverless Text-to-Speech API on AWS using <b>API Gateway</b> , <b>Lambda</b>, and <b>Amazon Polly</b>. Defined infrastructure with CloudFormation and implemented <b>CI/CD</b> using GitHub Actions for automated deployment, returning a public S3 URL for synthesized audio.
                     </p>
                 </div>
 
                 <div class="project-item">
+                    <p class="project-title">
+                        <a href="https://github.com/georgewallden/Is-it-a-dog" style="text-decoration:none; color: inherit;">Is it a Dog? Serverless API App</a>
+                    </p>
+                    <p class="project-description">
+                        Implemented a serverless image recognition API using AWS Lambda, API Gateway, and S3, leveraging <b>Amazon Rekognition</b> to identify dogs within uploaded images.
+                    </p>
+                </div>
+
+                <!-- <div class="project-item">
                     <p class="project-title">Sentiment Analysis App</p>
                     <p class="project-description">
                         Built a sentiment analysis API leveraging serverless AWS services Lambda, API Gateway, DynamoDB and Amazon Comprehend to automatically detect and store the sentiment of text notes.
                     </p>
-                </div>
+                </div> -->
                 
                 <div class="project-item">
-                    <p class="project-title">Personal Budget Web App</p>
+                    <p class="project-title">
+                        Personal Budget Web App
+                    </p>
                     <p class="project-description">
-                        A modular web app for managing and tracking personal financial data. Front end using the React framework hosted on AWS. Technologies include: Javascript, CSS, HTML, AWS Amplify, AWS DynamoDB, AWS S3.
+                        A modular web app for managing and tracking personal financial data. Front end using <b>React</b> hosted on AWS. Technologies include: <b>Javascript</b>, <b>CSS</b>, <b>HTML</b>, Amplify, <b>DynamoDB</b>, S3.
                     </p>
                 </div>
             </section>
@@ -410,7 +422,7 @@
                 <h2 class="content-title">EXPERIENCE</h2>
                 
                 <div class="experience-item">
-                    <p class="date">December 2019 - Present</p>
+                    <p class="date">January 2020 - Present</p>
                     <p class="job-title">Application Developer</p>
                     <p class="company">Mistras Group Inc., Princeton Junction, NJ</p>
                     
@@ -422,11 +434,7 @@
                         <li><strong>Utilized</strong> Novacura Flow Studio, Microsoft SQL Server, and SSRS to develop and enhance customer web portals and mobile applications, delivering robust and user-friendly solutions.</li>
                     </ul>
                 </div>
-            </section>
-            
-            
-            
-            
+            </section>        
         </div>
     </div>
 </body>
