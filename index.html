@@ -253,6 +253,34 @@
                 font-size: 14px;
             }
         }
+
+        .education-sidebar {
+            margin-bottom: 30px; /* Or adjust as needed */
+        }
+        .degree-sidebar {
+            font-size: 15px;
+            margin-bottom: 5px;
+        }
+        .school-sidebar {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            line-height: 1.5;
+        }
+        .skills-grid strong {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+        .skills-grid p {
+            color: #555;
+            font-size: 14px;
+        }
     </style>
 </head>
 <body>
@@ -305,49 +333,53 @@
                     <span><a href="https://www.github.com/georgewallden" style="color: #0077b5; text-decoration: none;" target="_blank">GitHub</a></span>
                 </div>
             </div>
-            
-            <div class="skills-section">
 
-                <h2 class="section-title"> Certifications: </h2>
-                <ul class="skills-list">
-                    <li>AWS Certified Cloud Practitioner</li>
-                    <li>AWS Certified AI Practitioner</li>
-
-                <h2 class="section-title">SKILLS:</h2>
-            
-                <h3 class="section-title">Cloud & DevOps</h3>
-                <ul class="skills-list">
-                    <li>Amazon Web Services (AWS)</li>
-                    <li>API Gateway, Lambda, S3 </li> 
-                    <li>RDS, DynamoDB</li>
-                    <li>CloudFormation, Terraform (Infrastructure as Code)</li>
-                    <li>Docker, ECR, ECS</li>
-                    <li>Bedrock, Polly, Rekognition, Comprehend</li>
-                    <li>CI/CD (GitHub Actions)</li>
-                    <li>CloudFront, Route 53, Certificate Manager</li>
-                    <li>IAM, Cloudwatch, SNS </li>
-                </ul>
-            
-                <h3 class="section-title"> Programming & Frontend</h3>
-                <ul class="skills-list">
-                    <li>SQL, Python</li>
-                    <li>React</li>
-                    <li>JavaScript</li>
-                    <li>CSS</li>
-                    <li>HTML</li>
-                </ul>
-            
-                <h3 class="section-title"> Tools & Collaboration</h3>
-                <ul class="skills-list">
-                    <li>Agile SDLC Methodology</li>
-                    <li>Report Building – SSRS</li>
-                    <li>Version Control – Git</li>
-                    <li>Training and Mentoring</li>
-                </ul>
-
-                
-                </ul>
+            <!-- EDUCATION -->
+            <div class="education-sidebar">
+                <h2 class="section-title">EDUCATION</h2>
+                <p style="font-weight: bold; margin-bottom: 5px;">B.S. in Computer Science</p>
+                <p style="font-size: 14px; color: #555;">The College of New Jersey - August 2019</p>
             </div>
+
+            <!-- CERTIFICATIONS -->
+            <h2 class="section-title">CERTIFICATIONS</h2>
+            <ul class="skills-list">
+                <li>AWS Certified Cloud Practitioner</li>
+                <li>AWS Certified AI Practitioner</li>
+            </ul>
+
+            <!-- KEY COMPETENCIES -->
+            <h2 class="section-title">KEY COMPETENCIES</h2>
+            <ul class="skills-list">
+                <li>Cloud Architecture</li>
+                <li>Containerization (Docker)</li>
+                <li>Infrastructure as Code (IaC)</li>       
+                <li>Full-Stack Development</li>
+                <li>UI/UX Design</li>
+                <li>Database Optimization</li>
+                <li>Agile Methodologies</li>
+            </ul>
+
+            <!-- CORE TECHNOLOGIES -->
+            <h2 class="section-title">CORE TECHNOLOGIES</h2>
+
+            <h3 class="section-title" style="font-size: 14px; margin-top: 15px;">PROGRAMMING & FRONTEND</h3>
+            <ul class="skills-list">
+                <li>SQL</li>
+                <li>Python</li>
+                <li>React</li>
+                <li>Angular</li>
+                <li>JavaScript, CSS, HTML</li>
+            </ul>
+
+            <h3 class="section-title" style="font-size: 14px; margin-top: 15px;">TOOLS & COLLABORATION</h3>
+            <ul class="skills-list">
+                <li>Agile SDLC Methodology, JIRA</li>
+                <li>Automation - N8N</li>
+                <li>Report Building – SSRS</li>
+                <li>Version Control – Git/GitHub</li>
+                <li>Training and Mentoring</li>
+            </ul>
         </div>
         
         <!-- Main Content -->
@@ -355,17 +387,25 @@
             <section class="content-section">
                 <h2 class="content-title">PROFESSIONAL SUMMARY</h2>
                 <p class="summary">
-                    Application Developer at Mistras Group Inc. with a strong foundation in database design, development, and performance optimization. Currently expanding my skills in AWS and cloud-native architectures, with the goal of transitioning into a cloud-focused role.
+                    Application Developer with a strong foundation in database design and performance optimization, now targeting a Cloud-Focused role. Eager to apply a deep understanding of backend systems and expanding AWS skills to build and deploy scalable, cloud-native solutions.
                 </p>
             </section>
 
             <section class="content-section">
-                <h2 class="content-title">EDUCATION</h2>
-                
-                <div class="education-item">
-                    <p class="date">August 2019</p>
-                    <p class="degree">Bachelor of Science (B.S.) in Computer Science</p>
-                    <p class="school">The College of New Jersey (TCNJ), NJ</p>
+                <h2 class="content-title">CLOUD SKILLS</h2>
+                <div class="skills-grid">
+                    <div>
+                        <strong>Platforms & Services:</strong>
+                        <p>AWS (Lambda, S3, API Gateway, RDS, DynamoDB, ECR, ECS, Bedrock, Polly)</p>
+                    </div>
+                    <div>
+                        <strong>Infrastructure & DevOps:</strong>
+                        <p>Terraform, CloudFormation, Docker, CI/CD (GitHub Actions)</p>
+                    </div>
+                    <div>
+                        <strong>Networking & Monitoring:</strong>
+                        <p>CloudFront, Route 53, IAM, CloudWatch, SNS</p>
+                    </div>
                 </div>
             </section>
 
@@ -400,20 +440,13 @@
                         Implemented a serverless image recognition API using AWS Lambda, API Gateway, and S3, leveraging <b>Amazon Rekognition</b> to identify dogs within uploaded images.
                     </p>
                 </div>
-
-                <!-- <div class="project-item">
-                    <p class="project-title">Sentiment Analysis App</p>
-                    <p class="project-description">
-                        Built a sentiment analysis API leveraging serverless AWS services Lambda, API Gateway, DynamoDB and Amazon Comprehend to automatically detect and store the sentiment of text notes.
-                    </p>
-                </div> -->
                 
                 <div class="project-item">
                     <p class="project-title">
-                        Personal Budget Web App
+                        <a href="https://github.com/georgewallden/EmailTriageN8NWorkflow/tree/main" style="text-decoration:none; color: inherit;">Automated Email Triage Workflow</a>
                     </p>
                     <p class="project-description">
-                        A modular web app for managing and tracking personal financial data. Front end using <b>React</b> hosted on AWS. Technologies include: <b>Javascript</b>, <b>CSS</b>, <b>HTML</b>, Amplify, <b>DynamoDB</b>, S3.
+                        Designed and implemented a personal productivity workflow using the open-source automation tool <strong>N8N</strong>, which leverages Gmail <strong>APIs</strong> and conditional logic to filter and categorize incoming messages in real time. <strong>DynamoDB</strong> for data persistence.
                     </p>
                 </div>
             </section>
@@ -427,11 +460,10 @@
                     <p class="company">Mistras Group Inc., Princeton Junction, NJ</p>
                     
                     <ul class="job-duties">
-                        <li><strong>Designed and implemented</strong> databases for various customer-facing and internal projects, ensuring compliance with company standards and exceeding client expectations.</li>
-                        <li><strong>Collaborated with business analysts</strong> using AGILE methodologies to gather requirements and translate them into optimized database schemas, consistently meeting project deadlines.</li>
-                        <li><strong>Developed and Maintained</Strong> relational database components—including tables, views, stored procedures, and triggers—to enhance system performance and scalability.</li>
-                        <li><strong>Presented software solutions</strong> directly to clients, facilitating feedback sessions and providing on-site training to ensure seamless adoption.</li>
-                        <li><strong>Utilized</strong> Novacura Flow Studio, Microsoft SQL Server, and SSRS to develop and enhance customer web portals and mobile applications, delivering robust and user-friendly solutions.</li>
+                        <li><strong>Engineered Full-Stack solutions</strong> for internal/customer-facing web portals and mobile applications, owning the complete development lifecycle from <strong>UI/UX</strong> design and front-end implementation to back-end logic and database integration for 5 enterprise clients</li>
+                        <li><strong>Architected and optimized relational databases</strong> (MS SQL Server), developing complex stored procedures, triggers, and views that <strong>reduced data processing times by 40%</strong> and supported high-throughput operations.</li>
+                        <li><strong>Collaborated with business analysts and stakeholders</strong> in an <strong>Agile SCRUM</strong> environment to translate requirements into technical specifications, ensuring on time delivery for <strong>15+ projects</strong>.</li>
+                        <li><strong>Maintained and enhanced a suite of business-critical applications</strong>, troubleshooting complex issues and deploying regular updates to improve functionality and system stability for over <strong>100 daily active users</strong>.</li>
                     </ul>
                 </div>
             </section>        
