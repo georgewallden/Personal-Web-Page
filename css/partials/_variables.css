@@ -1,0 +1,14 @@
+/* css/partials/_variables.css */
+
+:root {
+    --font-heading: 'Cambria', Georgia, serif;
+    --font-body: Arial, Helvetica, sans-serif;
+
+    --color-dark: #000000;
+    --color-medium: #333333;
+    --color-light: #555555;
+    --color-accent: #005a9c;
+    --page-background: #ffffff;
+
+    --line-height-body: 2;
+}

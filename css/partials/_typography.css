@@ -1,0 +1,49 @@
+/* css/partials/_typography.css */
+
+header .name {
+    font-family: var(--font-heading);
+    font-size: 30px !important;
+    font-weight: 900;
+    letter-spacing: 1.2px;
+    line-height: 1.15;
+    margin-bottom: 6px;
+}
+
+
+header .title {
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--color-light);
+}
+
+
+.content-title {
+    font-family: var(--font-heading);
+    font-size: 20px;
+    text-transform: uppercase;
+    color: var(--color-medium);
+    margin-bottom: 10px;
+
+}
+
+
+.sidebar .section-title {
+    font-family: var(--font-heading);
+    font-size: 16pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--color-dark);
+}
+
+
+.tech-subtitle {
+    font-family: var(--font-body);
+    font-size: 11px;
+    font-weight: 700; 
+    text-transform: uppercase; 
+    letter-spacing: 0.5px; 
+    margin-top: 15px;
+    margin-bottom: 8px;
+}

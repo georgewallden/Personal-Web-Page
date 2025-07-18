@@ -1,0 +1,215 @@
+/* css/partials/_components.css */
+
+.sidebar section:not(:first-child),
+.main-content section:not(:first-child)
+{
+    margin-top: 20px;
+}
+
+
+
+
+/* --- CONTACT INFO Component --- */
+.contact-info-block{
+    margin-top: 20px;
+}
+.contact-info ul
+{
+    list-style: none;
+}
+.contact-info li
+{
+    font-size: 14px;
+    line-height: var(--line-height-body);
+    margin-bottom: 2px;
+}
+
+
+
+
+/* --- EDUCATION Component --- */
+.education-sidebar-block{
+    margin-top: 20px;
+}
+.education-sidebar .degree
+{
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+.education-sidebar .school
+{
+    font-size: 12px;
+    color: var(--color-light);
+}
+
+
+
+
+/* --- STYLED LISTS Component (for Certs, Competencies, Duties) --- */
+.styled-list-block{
+    margin-top: 20px;
+}
+.styled-list
+{
+    list-style: none;
+}
+.styled-list li
+{
+    font-size: 12px;
+    line-height: var(--line-height-body);
+    position: relative;
+    padding-left: 20px;
+}
+.styled-list li::before
+{
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--color-accent);
+}
+.styled-list strong
+{
+    font-weight: 700;
+    color: var(--color-dark);
+}
+
+
+
+
+/* --- SUMMARY Component --- */
+.summary
+{
+    font-size: 12px;
+    line-height: var(--line-height-body);
+    color: var(--color-medium);
+    padding-bottom: 20px;
+}
+
+
+
+
+/* --- CLOUD SKILLS Component --- */
+.skills-grid
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;                    
+}
+.skill-category strong
+{
+    display: block;
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+.skill-category .sub-grid
+{
+    list-style: none;
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 8px;
+    column-gap: 15px;
+}
+.skill-category .sub-grid.single-column
+{
+    grid-template-columns: 1fr;
+}
+.skill-category .sub-grid li
+{
+    font-size: 11px;
+    line-height: 1.1;
+    color: var(--color-medium);
+}
+
+
+
+
+/* --- CLOUD PROJECTS Component --- */
+.project-block{
+    margin-top: 20px;
+}
+.project-item:not(:first-child)
+{
+    margin-top: 21px;
+}
+.project-item .project-title
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+.project-item .project-title > a
+{
+    color: inherit;
+    text-decoration: none;
+}
+.project-item .project-title > a:hover
+{
+    text-decoration: underline;
+}
+.project-item .project-icons {
+    display: flex;
+    gap: 8px;
+    margin-left: 15px;
+}
+.project-item .icon-link
+{
+    margin-left: 7px; 
+    opacity: 0.7;
+    transition: opacity 0.2s ease-in-out;
+    line-height: 0;
+}
+.project-item .icon-link:hover
+{
+    opacity: 1;
+    text-decoration: none; 
+}
+.project-item .icon-link svg {
+    width: 14px;
+    height: 16px;
+    fill: var(--color-dark);
+    vertical-align: middle;
+}
+.project-item .project-description
+{
+    font-size: 12px;
+    line-height: 1.7; 
+    color: var(--color-medium);
+}
+.project-item .project-description strong
+{
+    font-weight: 700;
+    color: var(--color-dark);
+}
+
+
+
+
+/* --- EXPERIENCE Component --- */
+.experience-block{
+    margin-top: 20px;
+}
+.experience-item .date
+{
+    font-size: 14px;
+    color: var(--color-light);
+    margin-bottom: 4px;
+}
+.experience-item .job-title
+{
+    font-weight: 700;
+    font-size: 15px;
+    margin-bottom: 4px;
+}
+.experience-item .company
+{
+    font-size: 14px;
+    color: var(--color-light);
+    font-style: italic;
+    margin-bottom: 15px;
+}

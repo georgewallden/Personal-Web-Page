@@ -1,0 +1,75 @@
+/* css/partials/_responsive.css */
+
+@media screen and (max-width: 768px) {
+    body {
+        padding: 0;
+    }
+    
+    .container {
+        flex-direction: column;
+        margin: 0;
+        box-shadow: none;
+    }
+    
+    .sidebar, .main-content {
+        width: 100%;
+        padding: 20px 15px;
+    }
+    
+    .name {
+        font-size: 28px;
+    }
+    
+    .title {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    
+    .content-title {
+        font-size: 18px;
+    }
+    
+    .job-title, .degree, .project-title {
+        font-size: 16px;
+    }
+    
+    .contact-item {
+        font-size: 14px;
+    }
+    
+    .job-duties li, .skills-list li {
+        font-size: 14px;
+    }
+}
+
+/* Extra small screens */
+@media screen and (max-width: 480px) {
+    .name {
+        font-size: 24px;
+    }
+    
+    .sidebar, .main-content {
+        padding: 15px 10px;
+    }
+    
+    .job-duties li, .skills-list li {
+        padding-left: 15px;
+    }
+    
+    .content-title {
+        font-size: 16px;
+    }
+    
+    .summary, .job-duties li, .project-description {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+    
+    .contact-item span:first-child {
+        width: 15px;
+    }
+    
+    .section-title {
+        font-size: 14px;
+    }
+}

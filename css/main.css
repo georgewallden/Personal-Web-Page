@@ -1,0 +1,9 @@
+/* css/main.css */
+
+
+@import "partials/_variables.css";
+@import "partials/_global.css";
+@import "partials/_layout.css";
+@import "partials/_typography.css";
+@import "partials/_components.css";
+@import "partials/_responsive.css";

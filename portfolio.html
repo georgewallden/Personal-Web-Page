@@ -4,159 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>George Wallden - Portfolio</title>
-    <!-- <link rel="stylesheet" href="style.css"> <-- Consider extracting CSS here later -->
-    <style>
-        /* --- General Styles (Copied from index.html) --- */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        body {
-            background-color: #f5f5f5;
-            /* min-height: 100vh; <-- Not strictly necessary for portfolio page */
-            padding: 20px; /* Add some padding around the content */
-        }
-
-        /* --- Container Styles (Modified from index.html) --- */
-        .container {
-            /* Remove flex properties */
-            width: 100%;
-            max-width: 800px; /* Adjust max-width for portfolio content */
-            margin: 0 auto; /* Center the container */
-            background-color: white; /* Match main content background */
-            padding: 40px 30px; /* Add padding inside the container */
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Keep the shadow */
-        }
-
-        /* --- Heading Styles --- */
-        /* Style the main h1 title to look like content-title */
-        h1 {
-            font-size: 24px; /* Slightly larger for main title */
-            text-transform: uppercase;
-            color: #333;
-            margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 1px solid #e0e0e0;
-        }
-
-        /* --- Project Item Styles (Copied from index.html) --- */
-        .project-item {
-            margin-bottom: 30px; /* Increase margin slightly */
-        }
-
-        .project-title {
-            font-weight: bold;
-            font-size: 18px;
-            margin-bottom: 10px;
-            color: #222; /* Make title slightly darker */
-        }
-
-        .project-description {
-            line-height: 1.6; /* Match summary line height */
-            color: #333; /* Match summary text color */
-            margin-bottom: 10px; /* Add margin below description */
-        }
-
-        /* Style for bolded terms in descriptions */
-         .project-description b {
-             color: #555; /* Optional: Make bold text stand out slightly with color */
-         }
-
-
-        /* --- Link Styles --- */
-        .container a {
-            color: #0077b5; /* Example link color */
-            text-decoration: none;
-        }
-
-        .container a:hover {
-            text-decoration: underline; /* Add underline on hover */
-        }
-
-        .project-header {
-            display: flex; /* Use flexbox to align items side-by-side */
-            justify-content: space-between; /* Push title and button apart */
-            align-items: center; /* Vertically center items */
-            margin-bottom: 10px; /* Match the original margin-bottom of project-title */
-        }
-
-        .project-item .project-title {
-             margin-bottom: 0; /* Remove margin-bottom from the paragraph when inside flex */
-             flex-grow: 1; /* Allow the title to take up available space */
-             margin-right: 15px; /* Add space between title and button */
-        }
-
-        .project-link-button {
-            font-size: 24px; /* Make the arrow larger */
-            color: #0077b5; /* Match link color */
-            text-decoration: none; /* Remove underline */
-            flex-shrink: 0; /* Prevent button from shrinking */
-            line-height: 1; /* Adjust line height for better vertical alignment */
-            padding: 0 5px; /* Add a little clickable area padding */
-            transition: transform 0.2s ease-in-out; /* Smooth hover effect */
-        }
-
-        .project-link-button:hover {
-            text-decoration: none; /* Ensure no underline on hover */
-            transform: translateX(3px); /* Slide arrow slightly on hover */
-        }
-
-        /* Optional: Adjust responsive styles if needed */
-        @media screen and (max-width: 480px) {
-            .project-link-button {
-                font-size: 20px; /* Slightly smaller arrow on small screens */
-            }
-             .project-item .project-title {
-                 margin-right: 10px;
-             }
-        }
-
-
-        /* --- Responsive Styles (Modified from index.html) --- */
-        @media screen and (max-width: 768px) {
-            body {
-                padding: 15px; /* Reduce body padding on smaller screens */
-            }
-            .container {
-                 padding: 20px 15px; /* Adjust container padding */
-            }
-            h1 {
-                font-size: 20px; /* Adjust title size */
-            }
-            .project-title {
-                font-size: 16px; /* Adjust project title size */
-            }
-            .project-description {
-                font-size: 14px; /* Adjust project description font size */
-            }
-        }
-
-        @media screen and (max-width: 480px) {
-             body {
-                padding: 10px; /* Further reduce body padding */
-            }
-             .container {
-                 padding: 15px 10px; /* Further adjust container padding */
-            }
-            h1 {
-                font-size: 18px; /* Further adjust title size */
-            }
-             .project-title {
-                font-size: 15px; /* Further adjust project title size */
-            }
-             .project-description {
-                font-size: 13px; /* Further adjust project description font size */
-                line-height: 1.5;
-            }
-        }
-
-    </style>
+    <!-- Same stylesheet, for a consistent look and feel -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="container">
+    <!-- A dedicated container for this page layout -->
+    <main class="portfolio-container">
         <h1>Cloud Projects Portfolio</h1>
 
         <div class="project-item">
@@ -219,8 +72,8 @@
                 A modular web app for managing and tracking personal financial data. Front end using <b>React</b> hosted on AWS. Technologies include: <b>Javascript</b>, <b>CSS</b>, <b>HTML</b>, Amplify, <b>DynamoDB</b>, S3.
             </p>
         </div>
-
-        <p><a href="index.html">← Back to Resume</a></p>
-    </div>
+        
+        <p><a href="index.html" class="back-link">← Back to Resume</a></p>
+    </main>
 </body>
 </html>
