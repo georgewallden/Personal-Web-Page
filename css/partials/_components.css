@@ -7,8 +7,6 @@
 }
 
 
-
-
 /* --- CONTACT INFO Component --- */
 .contact-info-block{
     margin-top: 20px;
@@ -20,11 +18,9 @@
 .contact-info li
 {
     font-size: 14px;
-    line-height: var(--line-height-body);
+    line-height: var(--line-height-body-small);
     margin-bottom: 2px;
 }
-
-
 
 
 /* --- EDUCATION Component --- */
@@ -44,8 +40,6 @@
 }
 
 
-
-
 /* --- STYLED LISTS Component (for Certs, Competencies, Duties) --- */
 .styled-list-block{
     margin-top: 20px;
@@ -57,7 +51,7 @@
 .styled-list li
 {
     font-size: 12px;
-    line-height: var(--line-height-body);
+    line-height: var(--line-height-body-small);
     position: relative;
     padding-left: 20px;
 }
@@ -75,8 +69,6 @@
 }
 
 
-
-
 /* --- SUMMARY Component --- */
 .summary
 {
@@ -85,8 +77,6 @@
     color: var(--color-medium);
     padding-bottom: 20px;
 }
-
-
 
 
 /* --- CLOUD SKILLS Component --- */
@@ -122,8 +112,6 @@
     line-height: 1.1;
     color: var(--color-medium);
 }
-
-
 
 
 /* --- CLOUD PROJECTS Component --- */
@@ -186,7 +174,6 @@
     font-weight: 700;
     color: var(--color-dark);
 }
-
 
 
 
