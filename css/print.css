@@ -1,0 +1,51 @@
+/*
+ * Simple Print Stylesheet
+ * Only hides icons and swaps hyperlinks for written links
+ */
+
+@page {
+    margin: 0.5in;
+}
+
+/* Hide icons and decorative elements */
+.project-icons,
+.contact-screen,
+.icon,
+.fa,
+.fas,
+.far,
+.fab {
+    display: none !important;
+}
+
+/* Show contact information for print */
+.contact-print {
+    display: block !important;
+}
+
+/* Make hyperlinks show their URLs as text */
+a[href]:after {
+    content: " (" attr(href) ")";
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* Hide internal/relative links from showing URLs */
+a[href^="#"]:after,
+a[href^="/"]:after,
+a[href^="./"]:after,
+a[href^="../"]:after {
+    content: "";
+}
+
+/* Ensure good contrast for print */
+body {
+    background: white !important;
+    color: black !important;
+}
+
+/* Remove shadows and backgrounds that don't print well */
+* {
+    box-shadow: none !important;
+    text-shadow: none !important;
+}

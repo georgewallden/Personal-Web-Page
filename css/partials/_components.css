@@ -21,6 +21,9 @@
     line-height: var(--line-height-body-small);
     margin-bottom: 2px;
 }
+.contact-print {
+    display: none;
+}
 
 
 /* --- EDUCATION Component --- */
