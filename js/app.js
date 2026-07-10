@@ -27,11 +27,11 @@ document.addEventListener("DOMContentLoaded", function() {
         'contact-info.html': 'contact-info-placeholder',
         'education.html': 'education-placeholder',
         'certifications.html': 'certifications-placeholder',
-        'key-competencies.html': 'key-competencies-placeholder',
+        'capabilities.html': 'capabilities-placeholder',
         'core-technologies.html': 'core-technologies-placeholder',
         'summary.html': 'summary-placeholder',
-        'cloud-skills.html': 'cloud-skills-placeholder',
-        'cloud-projects.html': 'cloud-projects-placeholder',
+        'technical-skills.html': 'technical-skills-placeholder',
+        'projects.html': 'projects-placeholder',
         'experience.html': 'experience-placeholder'
     };
 

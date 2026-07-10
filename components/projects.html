@@ -1,0 +1,41 @@
+<!-- components/projects.html -->
+
+<div class="project-block">
+    <section class="content-section" aria-labelledby="projects-title">
+        <h2 id="projects-title" class="content-title">PROJECTS</h2>
+
+        
+        <!-- Project 1: On-Demand LLM Detector -->
+        <div class="project-item">
+            <h3 class="project-title">
+                <a href="https://github.com/georgewallden/llm-detector" target="_blank" rel="noopener noreferrer">On-Demand LLM Detector</a>
+                <div class="project-icons">
+                    <!-- <a href="https://georgewallden.com/llm-detector" class="icon-link" target="_blank" rel="noopener noreferrer" aria-label="Live Demo">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42L17.59 5H14V3z"/><path d="M5 5h5V3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-5h-2v5H5V5z"/></svg>
+                    </a> -->
+                    <a href="https://github.com/georgewallden/llm-detector" class="icon-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repository">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.6v-2.1c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.2-1.6-1.2-1.6-1-.7.1-.7.1-.7 1.1.1 1.7 1.2 1.7 1.2 1 .1 1.6-.7 1.9-1 .1-.7.4-1.2.7-1.5-2.5-.3-5.2-1.3-5.2-5.9 0-1.3.5-2.4 1.2-3.3-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.4 1.3 1-.3 2.1-.4 3.2-.4s2.2.1 3.2.4c2.3-1.6 3.3-1.3 3.3-1.3.6 1.6.2 2.8.1 3.1.8.9 1.2 2 1.2 3.3 0 4.6-2.7 5.6-5.3 5.9.4.3.8 1 .8 2v2.9c0 .4.2.7.8.6 4.6-1.5 7.9-5.7 7.9-10.9C23.5 5.65 18.35.5 12 .5z"/></svg>
+                    </a>
+                </div>
+            </h3>
+            <p class="project-description">
+                Fine-tuned a <strong>transformer model</strong> for LLM text detection, achieving <strong>99.8% F1 on a held-out test split</strong> of a public LLM-text dataset. Deployed as a live full-stack application with <strong>zero-to-one serverless scaling</strong> — a Lambda trigger spins up <strong>ECS tasks</strong> behind a <strong>load balancer</strong> on demand, with containers self-terminating after inactivity to eliminate idle infrastructure costs.</p>
+        </div>
+
+        <!-- Project 2: Prompt Linter -->
+        <div class="project-item">
+            <h3 class="project-title">
+                <a href="https://github.com/georgewallden/Prompt-Linter" target="_blank" rel="noopener noreferrer">Prompt Risk Analysis Engine</a>
+                <div class="project-icons">
+                    <a href="https://github.com/georgewallden/Prompt-Linter" class="icon-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repository">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.6v-2.1c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.2-1.6-1.2-1.6-1-.7.1-.7.1-.7 1.1.1 1.7 1.2 1.7 1.2 1 .1 1.6-.7 1.9-1 .1-.7.4-1.2.7-1.5-2.5-.3-5.2-1.3-5.2-5.9 0-1.3.5-2.4 1.2-3.3-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.4 1.3 1-.3 2.1-.4 3.2-.4s2.2.1 3.2.4c2.3-1.6 3.3-1.3 3.3-1.3.6 1.6.2 2.8.1 3.1.8.9 1.2 2 1.2 3.3 0 4.6-2.7 5.6-5.3 5.9.4.3.8 1 .8 2v2.9c0 .4.2.7.8.6 4.6-1.5 7.9-5.7 7.9-10.9C23.5 5.65 18.35.5 12 .5z"/></svg>
+                    </a>
+                </div>
+            </h3>
+            <p class="project-description">
+                Developed a <strong>full-stack AI system</strong> to analyze and score LLM prompts for clarity, specificity, and hallucination risk. <strong>Fine-tuned a multi-head PyTorch Transformer</strong> for scoring, with <strong>token-level explanation traces (Captum)</strong> showing which parts of a prompt drive each score. Architected with a <strong>React/TypeScript</strong> frontend, <strong>FastAPI</strong> backend, and an MLOps CI/CD pipeline via <strong>GitHub Actions</strong>.
+            </p>
+        </div>
+
+    </section>
+</div>

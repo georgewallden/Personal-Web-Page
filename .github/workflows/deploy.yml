@@ -21,7 +21,7 @@ jobs:
           aws-region: us-east-1 
 
       - name: Sync files to S3
-        run: aws s3 sync . s3://www.georgewallden.com --delete --exclude ".git/*" --exclude "llm-detector/*"
+        run: aws s3 sync . s3://www.georgewallden.com --delete --exclude ".git/*" --exclude "llm-detector/*" --exclude "BudgetApp/*" --exclude "BudgetApp-dev/*"
 
       - name: Invalidate CloudFront cache
         run: |

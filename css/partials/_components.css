@@ -119,11 +119,11 @@
 
 /* --- CLOUD PROJECTS Component --- */
 .project-block{
-    margin-top: 20px;
+    margin-top: 8px;
 }
 .project-item:not(:first-child)
 {
-    margin-top: 21px;
+    margin-top: 12px;
 }
 .project-item .project-title
 {
@@ -171,6 +171,7 @@
     font-size: 12px;
     line-height: 1.7; 
     color: var(--color-medium);
+    margin-bottom: 15px;
 }
 .project-item .project-description strong
 {
@@ -202,4 +203,8 @@
     color: var(--color-light);
     font-style: italic;
     margin-bottom: 15px;
+}
+.experience-gap
+{
+    margin-top: 18px;
 }
