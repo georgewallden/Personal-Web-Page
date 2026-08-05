@@ -21,7 +21,23 @@ jobs:
           aws-region: us-east-1 
 
       - name: Sync files to S3
-        run: aws s3 sync . s3://www.georgewallden.com --delete --exclude ".git/*" --exclude "llm-detector/*" --exclude "BudgetApp/*" --exclude "BudgetApp-dev/*"
+        run: aws s3 sync . s3://www.georgewallden.com --delete --exclude ".git/*" --exclude ".github/*" --exclude "utils/*" --exclude "llm-detector/*" --exclude "BudgetApp/*" --exclude "BudgetApp-dev/*"
+
+      - name: Deploy visitor notifier
+        run: |
+          cd utils/resume-notifier
+          zip function.zip lambda_function.py
+          aws lambda update-function-code \
+            --function-name ResumeVisitorNotifier \
+            --zip-file fileb://function.zip \
+            --region us-east-1
+          aws lambda wait function-updated \
+            --function-name ResumeVisitorNotifier \
+            --region us-east-1
+          aws lambda publish-version \
+            --function-name ResumeVisitorNotifier \
+            --region us-east-1 \
+            --query "FunctionArn" --output text
 
       - name: Invalidate CloudFront cache
         run: |
