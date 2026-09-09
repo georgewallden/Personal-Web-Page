@@ -20,8 +20,22 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-1 
 
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Build site (inline resume components into dist/)
+        run: node build.js
+
+      - name: Verify resume content is in the built HTML
+        run: node scripts/check-resume-html.js dist/index.html
+
+      # dist/ is the deploy artifact. Other apps live in the same bucket under
+      # their own prefixes and are NOT in dist/, so they must stay excluded or
+      # --delete removes them.
       - name: Sync files to S3
-        run: aws s3 sync . s3://www.georgewallden.com --delete --exclude ".git/*" --exclude ".github/*" --exclude "utils/*" --exclude "llm-detector/*" --exclude "BudgetApp/*" --exclude "BudgetApp-dev/*"
+        run: aws s3 sync dist/ s3://www.georgewallden.com --delete --exclude "llm-detector/*" --exclude "BudgetApp/*" --exclude "BudgetApp-dev/*"
 
       - name: Deploy visitor notifier
         run: |

@@ -4,3 +4,5 @@ Retail_Version/*
 utils/resume-notifier/function.zip
 utils/resume-notifier/response.json
 utils/resume-notifier/test-event.json
+# build artifact (see build.js)
+dist/

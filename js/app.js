@@ -3,6 +3,11 @@
 document.addEventListener("DOMContentLoaded", function() {
     // This function fetches HTML content and injects it into a specified element
     const loadComponent = (componentPath, elementId) => {
+        // Skip placeholders already filled at build time (see build.js).
+        const existing = document.getElementById(elementId);
+        if (existing && existing.childElementCount > 0) {
+            return;
+        }
         fetch(componentPath)
             .then(response => {
                 if (!response.ok) {

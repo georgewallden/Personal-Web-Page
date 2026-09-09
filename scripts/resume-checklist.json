@@ -1,0 +1,72 @@
+{
+  "_comment": "Substrings that must appear in the built resume HTML. Test fixture only — resume text lives in components/*.html. Update when a component changes.",
+  "minSkills": 12,
+  "required": {
+    "identity": [
+      "GEORGE WALLDEN",
+      "AI Application",
+      "Engineer"
+    ],
+    "contact": [
+      "georgewallden@outlook.com",
+      "www.GeorgeWallden.com",
+      "Tinton Falls, NJ 07753",
+      "973-856-4811",
+      "linkedin.com/in/george-wallden",
+      "github.com/georgewallden"
+    ],
+    "employers": [
+      "BAM Technologies LLC",
+      "Mistras Group Inc."
+    ],
+    "titles": [
+      "Product Developer II",
+      "Application Developer"
+    ],
+    "dates": [
+      "December 2025 - July 2026",
+      "January 2020 - July 2025"
+    ],
+    "education": [
+      "B.S. in Computer Science",
+      "The College of New Jersey - Aug 2019"
+    ],
+    "certifications": [
+      "CompTIA Security+",
+      "AWS Certified Cloud Practitioner",
+      "AWS Certified AI Practitioner"
+    ],
+    "projects": [
+      "Agentic Self-Managing Memory and Project System",
+      "Automated Job Search Board with AI Matching"
+    ],
+    "headings": [
+      "EXPERIENCE",
+      "PROJECTS",
+      "Technical Skills",
+      "EDUCATION",
+      "CERTIFICATIONS",
+      "Capabilities"
+    ],
+    "skills": [
+      "RAG Architecture",
+      "Agentic Workflows",
+      "Prompt Engineering",
+      "PyTorch / Transformers",
+      "S3",
+      "Lambda",
+      "API Gateway",
+      "DynamoDB / RDS / Glue",
+      "ECS / ECR / EC2",
+      "Bedrock / Polly / Rekognition",
+      "Route 53 / ACM / CloudFront",
+      "IAM / Cognito / CloudWatch",
+      "Terraform",
+      "Docker",
+      "GitHub Actions (CI/CD)",
+      "TypeScript / React, Angular",
+      "Backend: .NET / Python / FastAPI",
+      "SQL / MS SQL Server / PostgreSQL (PgVector)"
+    ]
+  }
+}
