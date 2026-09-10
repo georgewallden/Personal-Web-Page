@@ -44,8 +44,44 @@ if (skillsFound < minSkills) {
     console.error(`MISSING [skills]: only ${skillsFound} of required minimum ${minSkills} skills found`);
 }
 
+// --- v0.0.3: metadata assertions (title, description, Person JSON-LD) ---
+
+function fail(msg) {
+    missing += 1;
+    console.error(`MISSING [metadata]: ${msg}`);
+}
+
+const titleMatch = html.match(/<title>([\s\S]*?)<\/title>/);
+if (!titleMatch) {
+    fail("no <title> element found");
+} else if (!titleMatch[1].includes("AI Application Engineer")) {
+    fail(`<title> does not contain "AI Application Engineer" (got: ${titleMatch[1]})`);
+}
+
+const descMatch = html.match(/<meta\s+name="description"\s+content="([^"]*)"/);
+if (!descMatch) {
+    fail('no <meta name="description"> found');
+} else if (!descMatch[1].includes("AI Application Engineer")) {
+    fail(`meta description does not contain "AI Application Engineer" (got: ${descMatch[1]})`);
+}
+
+const ldJsonBlocks = [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)];
+if (ldJsonBlocks.length !== 1) {
+    fail(`expected exactly one application/ld+json block, found ${ldJsonBlocks.length}`);
+} else {
+    let parsed;
+    try {
+        parsed = JSON.parse(ldJsonBlocks[0][1]);
+    } catch (e) {
+        fail(`application/ld+json block does not parse: ${e.message}`);
+    }
+    if (parsed && parsed["@type"] !== "Person") {
+        fail(`JSON-LD @type is "${parsed["@type"]}", expected "Person"`);
+    }
+}
+
 if (missing > 0) {
     console.error(`check-resume-html: FAIL — ${missing} problem(s) in ${path.relative(ROOT, target)}`);
     process.exit(1);
 }
-console.log(`check-resume-html: OK — ${total} required strings present in ${path.relative(ROOT, target)} (${html.length} bytes)`);
+console.log(`check-resume-html: OK — ${total} required strings + metadata checks present in ${path.relative(ROOT, target)} (${html.length} bytes)`);

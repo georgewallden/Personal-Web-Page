@@ -1,0 +1,32 @@
+{
+  "_comment": "Single source for page metadata (M00 v0.0.3). build.js reads this and generates <title>, <meta>, OpenGraph/Twitter tags, the Person JSON-LD block, robots.txt, and sitemap.xml. Do not hand-type title/description anywhere else.",
+  "siteUrl": "https://www.georgewallden.com/",
+  "name": "George Wallden",
+  "jobTitle": "AI Application Engineer",
+  "title": "George Wallden — AI Application Engineer",
+  "description": "AI Application Engineer specializing in RAG architecture, agentic workflows, and LLM integration. Full-stack developer in Python, C#, and SQL.",
+  "sameAs": [
+    "https://www.linkedin.com/in/george-wallden/",
+    "https://www.github.com/georgewallden"
+  ],
+  "knowsAbout": [
+    "RAG Architecture",
+    "Agentic Workflows",
+    "LLM Integration",
+    "Prompt Engineering",
+    "Amazon Web Services (AWS)",
+    "Terraform",
+    "Docker",
+    "Python",
+    "C#",
+    "SQL",
+    "TypeScript",
+    "React",
+    "Angular"
+  ],
+  "hasCredential": [
+    "CompTIA Security+",
+    "AWS Certified Cloud Practitioner",
+    "AWS Certified AI Practitioner"
+  ]
+}
